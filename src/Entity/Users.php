@@ -6,6 +6,7 @@ use App\Repository\UsersRepository;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass=UsersRepository::class)
@@ -34,14 +35,14 @@ class Users implements UserInterface
 
     /**
      * @var string|null
-     *
+     * @Assert\NotBlank(message="Remplie les cases vides fréro")
      * @ORM\Column(name="firstname", type="string", length=255, nullable=true)
      */
     private $firstname;
 
     /**
      * @var string|null
-     *
+     * @Assert\NotBlank(message="Remplie les cases vides fréro")
      * @ORM\Column(name="lastname", type="string", length=255, nullable=true)
      */
     private $lastname;
