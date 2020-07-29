@@ -51,51 +51,10 @@ class Users implements UserInterface
     /**
      * @var string|null
      *
-     * @ORM\Column(name="address", type="string", length=255, nullable=true)
-     */
-    private $address;
-
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="postalCode", type="string", length=255, nullable=true)
-     */
-    private $postalcode;
-
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="city", type="string", length=255, nullable=true)
-     */
-    private $city;
-
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="country", type="string", length=100, nullable=true)
-     */
-    private $country;
-
-    /**
-     * @var string|null
-     *
      * @ORM\Column(name="Role", type="string", length=255, nullable=true)
      */
     private $role = 'ROLE_USER';
 
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="dateModification", type="datetime", nullable=false)
-     */
-    private $datemodification;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="dateCreation", type="datetime", nullable=false)
-     */
-    private $datecreation;
 
     public function __construct()
     {
@@ -195,53 +154,7 @@ class Users implements UserInterface
         return $this;
     }
 
-    public function getAddress(): ?string
-    {
-        return $this->address;
-    }
 
-    public function setAddress(?string $address): self
-    {
-        $this->address = $address;
-
-        return $this;
-    }
-
-    public function getPostalcode(): ?string
-    {
-        return $this->postalcode;
-    }
-
-    public function setPostalcode(?string $postalcode): self
-    {
-        $this->postalcode = $postalcode;
-
-        return $this;
-    }
-
-    public function getCity(): ?string
-    {
-        return $this->city;
-    }
-
-    public function setCity(?string $city): self
-    {
-        $this->city = $city;
-
-        return $this;
-    }
-
-    public function getCountry(): ?string
-    {
-        return $this->country;
-    }
-
-    public function setCountry(?string $country): self
-    {
-        $this->country = $country;
-
-        return $this;
-    }
 
     public function getRole(): ?string
     {
@@ -255,27 +168,7 @@ class Users implements UserInterface
         return $this;
     }
 
-    public function getDatemodification(): ?\DateTimeInterface
-    {
-        return $this->datemodification;
-    }
 
-    public function setDatemodification(\DateTimeInterface $datemodification): self
-    {
-        $this->datemodification = $datemodification;
 
-        return $this;
-    }
 
-    public function getDatecreation(): ?\DateTimeInterface
-    {
-        return $this->datecreation;
-    }
-
-    public function setDatecreation(\DateTimeInterface $datecreation): self
-    {
-        $this->datecreation = $datecreation;
-
-        return $this;
-    }
 }
