@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Products
  *
  * @ORM\Table(name="Products")
- * @ORM\Entity(repositoryClass="App\Repository\ProductsRepository")
+ * @ORM\Entity
  */
 class Products
 {
@@ -20,6 +20,13 @@ class Products
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
     private $id;
+
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="idOrder", type="integer", nullable=false)
+     */
+    private $idorder;
 
     /**
      * @var string|null
@@ -49,23 +56,21 @@ class Products
      */
     private $price;
 
-    /**
-     * @var string|null
-     *
-     * @ORM\Column(name="productVendor", type="string", length=255, nullable=true)
-     */
-    private $productvendor;
-
-    /**
-     * @var int|null
-     *
-     * @ORM\Column(name="quantityInStock", type="integer", nullable=true)
-     */
-    private $quantityinstock;
-
     public function getId(): ?int
     {
         return $this->id;
+    }
+
+    public function getIdorder(): ?int
+    {
+        return $this->idorder;
+    }
+
+    public function setIdorder(int $idorder): self
+    {
+        $this->idorder = $idorder;
+
+        return $this;
     }
 
     public function getLabel(): ?string
@@ -112,30 +117,6 @@ class Products
     public function setPrice(?string $price): self
     {
         $this->price = $price;
-
-        return $this;
-    }
-
-    public function getProductvendor(): ?string
-    {
-        return $this->productvendor;
-    }
-
-    public function setProductvendor(?string $productvendor): self
-    {
-        $this->productvendor = $productvendor;
-
-        return $this;
-    }
-
-    public function getQuantityinstock(): ?int
-    {
-        return $this->quantityinstock;
-    }
-
-    public function setQuantityinstock(?int $quantityinstock): self
-    {
-        $this->quantityinstock = $quantityinstock;
 
         return $this;
     }

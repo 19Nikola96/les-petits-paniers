@@ -7,8 +7,8 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * Payments
  *
- * @ORM\Table(name="Payments", indexes={@ORM\Index(name="idUser", columns={"idUser"}), @ORM\Index(name="idSubscription", columns={"idSubscription"})})
- * @ORM\Entity(repositoryClass="App\Repository\PaymentsRepository")
+ * @ORM\Table(name="Payments", indexes={@ORM\Index(name="IdOrder", columns={"IdOrder"})})
+ * @ORM\Entity
  */
 class Payments
 {
@@ -64,13 +64,6 @@ class Payments
     private $checknumber;
 
     /**
-     * @var int
-     *
-     * @ORM\Column(name="idProduct", type="integer", nullable=false)
-     */
-    private $idproduct;
-
-    /**
      * @var string|null
      *
      * @ORM\Column(name="paymentDate", type="string", length=255, nullable=true)
@@ -85,24 +78,11 @@ class Payments
     private $amount;
 
     /**
-     * @var \Users
+     * @var int
      *
-     * @ORM\ManyToOne(targetEntity="Users")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idUser", referencedColumnName="id")
-     * })
+     * @ORM\Column(name="IdOrder", type="integer", nullable=false)
      */
-    private $iduser;
-
-    /**
-     * @var \Subscriptions
-     *
-     * @ORM\ManyToOne(targetEntity="Subscriptions")
-     * @ORM\JoinColumns({
-     *   @ORM\JoinColumn(name="idSubscription", referencedColumnName="id")
-     * })
-     */
-    private $idsubscription;
+    private $idorder;
 
     public function getId(): ?int
     {
@@ -181,18 +161,6 @@ class Payments
         return $this;
     }
 
-    public function getIdproduct(): ?int
-    {
-        return $this->idproduct;
-    }
-
-    public function setIdproduct(int $idproduct): self
-    {
-        $this->idproduct = $idproduct;
-
-        return $this;
-    }
-
     public function getPaymentdate(): ?string
     {
         return $this->paymentdate;
@@ -217,26 +185,14 @@ class Payments
         return $this;
     }
 
-    public function getIduser(): ?Users
+    public function getIdorder(): ?int
     {
-        return $this->iduser;
+        return $this->idorder;
     }
 
-    public function setIduser(?Users $iduser): self
+    public function setIdorder(int $idorder): self
     {
-        $this->iduser = $iduser;
-
-        return $this;
-    }
-
-    public function getIdsubscription(): ?Subscriptions
-    {
-        return $this->idsubscription;
-    }
-
-    public function setIdsubscription(?Subscriptions $idsubscription): self
-    {
-        $this->idsubscription = $idsubscription;
+        $this->idorder = $idorder;
 
         return $this;
     }

@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Orders
  *
  * @ORM\Table(name="Orders", indexes={@ORM\Index(name="idProduct", columns={"idProduct"}), @ORM\Index(name="idUser", columns={"idUser"})})
- * @ORM\Entity(repositoryClass="App\Repository\OrdersRepository")
+ * @ORM\Entity
  */
 class Orders
 {
@@ -27,6 +27,20 @@ class Orders
      * @ORM\Column(name="orderDate", type="string", length=255, nullable=true)
      */
     private $orderdate;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="price", type="string", length=255, nullable=false)
+     */
+    private $price;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="status", type="string", length=255, nullable=false)
+     */
+    private $status;
 
     /**
      * @var \Users
@@ -61,6 +75,30 @@ class Orders
     public function setOrderdate(?string $orderdate): self
     {
         $this->orderdate = $orderdate;
+
+        return $this;
+    }
+
+    public function getPrice(): ?string
+    {
+        return $this->price;
+    }
+
+    public function setPrice(string $price): self
+    {
+        $this->price = $price;
+
+        return $this;
+    }
+
+    public function getStatus(): ?string
+    {
+        return $this->status;
+    }
+
+    public function setStatus(string $status): self
+    {
+        $this->status = $status;
 
         return $this;
     }

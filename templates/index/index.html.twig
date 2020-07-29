@@ -4,11 +4,6 @@
 
 {% block body %}
     <header class="container">
-        <nav>
-            <ul>
-                <li><a href="{{ path('app_login') }}">Connexion</a></li>
-                <li><a href="{{ path('app_register') }}">Création de compte</a></li>
-            </ul>
-        </nav>
+        {% include 'nav.html.twig' %}
     </header>
 {% endblock %}
