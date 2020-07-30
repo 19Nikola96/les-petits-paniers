@@ -2,7 +2,6 @@
 
 namespace App\Controller;
 
-use App\Security\UsersAuthenticator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 

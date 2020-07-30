@@ -7,7 +7,7 @@
             <li><a href="{{ path('app_register') }}">Création de compte</a></li>
         {%  endif %}
 
-        {% if (app.debug) %}
+{% if (app.debug) %}
             {% if(app.user) %}
                 {% if(app.user.role == "ROLE_ADMIN") %}
                     {{ app.user.firstname }}<br>
