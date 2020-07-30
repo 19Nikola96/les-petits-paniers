@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AddressController!{% endblock %}
+
+{% block body %}
+    <header class="container">
+        <h1>Données de livraison</h1>
+    </header>
+
+    <section class="container">
+        {{ form_start(form) }}
+        {{ form_row(form.firstname) }}
+        {{ form_row(form.lastname) }}
+        {{ form_row(form.city) }}
+        {{ form_row(form.postalcode) }}
+
+        <button type="submit" class="btn btn-primary">Enregistrer</button>
+        {{ form_end(form) }}
+    </section>
+{% endblock %}
