@@ -14,9 +14,9 @@ class AddressType extends AbstractType
         $builder
             ->add('firstname')
             ->add('lastname')
+            ->add('addressHome')
             ->add('postalcode')
             ->add('city')
-            ->add('iduser')
         ;
     }
 

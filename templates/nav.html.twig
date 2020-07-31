@@ -1,5 +1,6 @@
 <nav>
     <ul>
+        <li><a href="{{ path('app_address') }}">Addresse</a></li>
         {% if(app.user) %}
             <li><a href="{{ path('app_logout') }}">Déconnexion</a></li>
         {%  else  %}
@@ -7,7 +8,7 @@
             <li><a href="{{ path('app_register') }}">Création de compte</a></li>
         {%  endif %}
 
-{% if (app.debug) %}
+        {% if (app.debug) %}
             {% if(app.user) %}
                 {% if(app.user.role == "ROLE_ADMIN") %}
                     {{ app.user.firstname }}<br>
@@ -17,6 +18,5 @@
                 {% endif %}
             {% endif %}
         {% endif %}
-
     </ul>
 </nav>

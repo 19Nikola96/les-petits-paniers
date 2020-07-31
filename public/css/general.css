@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+
+header{
+    background-color: #F8F7F4;}
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    color: #211400;
+}
+
+h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
+    color: #211400
+}
+
+h3{
+    font-family: "Helvetica";
+    font-size:16px;
+    font-style: bold;
+    color: #696961;
+}
+
+
+p{
+    font-family:"Helvetica";
+    font-size: 14px;
+    color: #696961;
+}
+
+#infos{
+    background-color:#F8F7F4;
+    height: 200px;
+   
+}
+
+footer{
+    padding-top:66px;
+    text-align: center;
+    font-style: "Helvetica";
+    font-size: 15px;
+    color: #696961;
+    text-decoration: underline;
+    
+}
+
+.btn-primary
+{
+    background-color: #417B5A;
+    border-color: #417B5A;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover
+{
+    background-color: rgb(57, 111, 80);
+    border-color:rgb(57, 111, 80);
+}
+
+.btn-secondary
+{
+    background-color: white;
+    color: #417B5A ;
+    border-color:  #417B5A;
+    box-shadow:  #417B5A;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+}
+.btn-secondary:hover{
+    background-color:#417B5A;
+    color: white ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;}
+
+.form-control, .form-group{
+        border-color:#E7E4D8;
+
+    }
+
+.col-form-label{
+    font-family:"Helvetica";
+    font-size: 14px;
+    color: #696961;
+}
+.connexion{
+    background-color: #F8F7F4;
+}
