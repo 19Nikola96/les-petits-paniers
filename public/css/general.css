@@ -1,10 +1,25 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
 
+header {
+    background-color: #F8F7F4;
+}
+#header-menu{
+    height: 70px;
+}
 
-header{
-    background-color: #F8F7F4;}
+.fa{
+    color: #417B5A;
+    font-size: 25px;
+}
+
+.logo{
+    text-align: center;
+}
 
 h1{
     font-family: 'Abril Fatface', cursive;
@@ -25,6 +40,11 @@ h3{
     color: #696961;
 }
 
+h4{
+    font-family: "Helvetica";
+    font-size: 17px;
+    font-style: bold;
+}
 
 p{
     font-family:"Helvetica";
@@ -90,4 +110,28 @@ footer{
 }
 .connexion{
     background-color: #F8F7F4;
+}
+.form-check{
+    color: #696961;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-check-label{
+    text-decoration: underline;
+
+}
+
+#avis,#statut{background-color:  #F8F7F4;}
+
+.img-force-fluid {
+    width:100%;
+}
+
+.section-full {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.section-full img {
+    width: 100%;
+    object-fit: cover;
 }
