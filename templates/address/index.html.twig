@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AddressController!{% endblock %}
+{% block title %}Adresse{% endblock %}
 
 {% block body %}
     <header class="container">
@@ -9,11 +9,11 @@
 
     <section class="container">
         {{ form_start(addressForm) }}
-        {{ form_row(addressForm.firstname) }}
-        {{ form_row(addressForm.lastname) }}
-        {{ form_row(addressForm.city) }}
-        {{ form_row(addressForm.addressHome) }}
-        {{ form_row(addressForm.postalcode) }}
+        {{ form_row(addressForm.firstname, {'attr': {'value': app.user.firstname}, 'label': 'Prénom'}) }}
+        {{ form_row(addressForm.lastname, {'attr': {'value': app.user.lastname}, 'label': 'Nom'}) }}
+        {{ form_row(addressForm.city, {'label': 'Ville'}) }}
+        {{ form_row(addressForm.addressHome, {'label': 'Rue'}) }}
+        {{ form_row(addressForm.postalcode, {'label': 'Code Postal'}) }}
 
         <button type="submit" class="btn btn-primary">Enregistrer</button>
         {{ form_end(addressForm) }}

@@ -65,7 +65,7 @@ footer{
     font-size: 15px;
     color: #696961;
     text-decoration: underline;
-    
+    flex-shrink: 0;
 }
 
 .btn-primary
@@ -134,4 +134,8 @@ footer{
 .section-full img {
     width: 100%;
     object-fit: cover;
+}
+
+#user-name{
+
 }
