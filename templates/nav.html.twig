@@ -2,21 +2,18 @@
     <ul>
         <li><a href="{{ path('app_address') }}">Addresse</a></li>
         {% if(app.user) %}
+            Bonjour {{ app.user.firstname }}
+            {% if (app.debug) %}
+                {% if(app.user) %}
+                    {% if(app.user.role == "ROLE_ADMIN") %}
+                        Admin
+                    {% endif %}
+                {% endif %}
+            {% endif %}
             <li><a href="{{ path('app_logout') }}">Déconnexion</a></li>
         {%  else  %}
             <li><a href="{{ path('app_login') }}">Connexion</a></li>
             <li><a href="{{ path('app_register') }}">Création de compte</a></li>
         {%  endif %}
-
-        {% if (app.debug) %}
-            {% if(app.user) %}
-                {% if(app.user.role == "ROLE_ADMIN") %}
-                    {{ app.user.firstname }}<br>
-                    {{ app.user.lastname }}<br>
-                    {{ app.user.email }}<br>
-                    {{ app.user.role }}
-                {% endif %}
-            {% endif %}
-        {% endif %}
     </ul>
 </nav>
