@@ -1,0 +1,81 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Informations personnelles{% endblock %}
+
+{% block body %}
+
+    {% if(app.user) %}
+        <section >
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mt-5">
+                        <h1 class="text-center">Mes informations personnelles </h1>
+                    </div>
+                    <div class="col-12 pt-5">
+                        <h2>Générale</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="statut">
+            <div class="container">
+                <div class="row">
+                    <div class="col-10 mt-4 "><h4><i class="fas fa-user mr-2"></i>{{ app.user.firstname }}  {{ app.user.lastname }}</h4></div>
+                    <div class="col-2 mt-4 text-right"><i class="fas fa-pen"></i></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-10 my-3 "><h4><i class="fas fa-envelope mr-2"></i></i>{{ app.user.email }}</h4></div>
+                    <div class= "col-2 mt-3 text-right"><i class="fas fa-pen"></i></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-10 mt-3 "><h4><i class="fas fa-home mr-2"></i> 1 rue de la paix 75002 Paris</h4></div>
+                    <div class="col-2 mt-3 text-right"><i class="fas fa-pen"></i></div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-10 mt-4 "><h4><i class="fas fa-phone-alt mr-2"></i> 06 75 98 65 32</h4></div>
+                    <div class="col-2 mt-4 text-right"><i class="fas fa-pen"></i></div>
+                </div>
+                <hr>
+            </div>
+        </section>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 pt-5">
+                    <h2>Moyen de paiement</h2>
+                </div>
+            </div>
+        </div>
+
+        <section id="statut">
+            <div class="container">
+                <div class="row">
+                    <div class="card mt-3 py-3 col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-xl-4 offset-xl-4 mx-auto">
+                        <div class="row">
+                            <div class="col-12 "><p>Visa/electron ****6598</p></div>
+                            <div class="col-12 "><p>Marie Dupont</p></div>
+                            <div class="col-12 "><p>Expire le : 05/2022</p></div>
+                            <div class="col-12 "><button class="btn btn-primary btn-block">Modifier</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    {% else %}
+
+        <h1 class="text-center my-5">Veuillez vous connecter pour accéder à vos informations</h1>
+
+        <ul class="text-center list-group container w-25">
+            <li class="list-group-item"><a href="{{ path('app_login') }}">Se connecter</a></li>
+        </ul>
+
+
+    {% endif %}
+
+
+
+{% endblock %}

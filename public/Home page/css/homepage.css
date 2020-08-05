@@ -1,0 +1,55 @@
+#header-menu{
+    background-color: #F8F7F4;
+    height: 70px;
+}
+
+.fa{
+    color: #417B5A;
+    font-size: 25px;
+}
+
+.logo{
+    text-align: center;
+}
+
+#titre{background-image: url(../img/landing\ page\ background.png);
+background-size: cover;
+max-width: 100%;
+background-color: black;
+height:386px ;}
+
+.section-bg{
+    background-color: #F8F7F4;
+    margin-bottom:20px;
+    padding-bottom:20px;
+}
+
+.section-separator:after{
+    content:"";
+    display:block;
+    width:40px;
+    height:10px;
+    background-color: rgb(24, 122, 46);
+    margin: 80px auto 100px auto;
+
+}
+#panierclassique{
+    background-color: #F8F7F4;
+    margin-bottom:100px;
+    padding-bottom:20px;
+}
+
+#panierfamille{
+    background-color: #F8F7F4;
+    height: 534px;
+}
+#panierpremium{
+    background-color: #F8F7F4;
+    height: 534px;
+}
+
+#temoignage
+{
+    background-color: #F8F7F4;
+    height: 400px;
+}
