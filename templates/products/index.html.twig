@@ -4,13 +4,8 @@
 
 {% block body %}
 
-
-    <div class="container">
-        <h1>Nos paniers</h1>
-        {% for product in products %}
-            <strong>{{ product.label }}</strong><br>
-            {{ product.description }}<br>
-            {{ product.price }}<br>
-        {% endfor %}
-    </div>
+    <h1>{{ product.label }}</h1>
+    <p>{{ product.photo }}</p>
+    <p>{{ product.description }}</p>
+    <p>{{ product.price }}</p>
 {% endblock %}

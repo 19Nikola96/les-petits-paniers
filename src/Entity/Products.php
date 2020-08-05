@@ -36,6 +36,70 @@ class Products
     private $label;
 
     /**
+     * @return string|null
+     */
+    public function getLabel(): ?string
+    {
+        return $this->label;
+    }
+
+    /**
+     * @param string|null $label
+     */
+    public function setLabel(?string $label): void
+    {
+        $this->label = $label;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPhoto(): ?string
+    {
+        return $this->photo;
+    }
+
+    /**
+     * @param string|null $photo
+     */
+    public function setPhoto(?string $photo): void
+    {
+        $this->photo = $photo;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getDescription(): ?string
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string|null $description
+     */
+    public function setDescription(?string $description): void
+    {
+        $this->description = $description;
+    }
+
+    /**
+     * @return string|null
+     */
+    public function getPrice(): ?string
+    {
+        return $this->price;
+    }
+
+    /**
+     * @param string|null $price
+     */
+    public function setPrice(?string $price): void
+    {
+        $this->price = $price;
+    }
+
+    /**
      * @var string|null
      *
      * @ORM\Column(name="photo", type="text", length=65535, nullable=true)
