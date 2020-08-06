@@ -26,7 +26,7 @@ class Products
      *
      * @ORM\Column(name="idOrder", type="integer", nullable=false)
      */
-    private $idorder;
+    private $idorder = 1;
 
     /**
      * @return int

@@ -52,7 +52,7 @@ class AdminProductsController extends AbstractController
                 $entityManager->persist($product);
                 $entityManager->flush();
 
-                return $this->redirectToRoute('app_adminproducts_index');
+                return $this->redirectToRoute('app_adminproducts_edit');
             }
         }
 
@@ -74,7 +74,7 @@ class AdminProductsController extends AbstractController
         $entityManager->remove($products);
         $entityManager->flush();
 
-        return $this->redirectToRoute('app_adminproducts_index');
+        return $this->redirectToRoute('app_adminproducts_delete');
     }
 
 }
