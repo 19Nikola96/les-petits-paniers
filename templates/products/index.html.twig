@@ -3,9 +3,121 @@
 {% block title %}Hello ProductsController!{% endblock %}
 
 {% block body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <a href="#" class="btn-retour">Retour</a>
+            </div>
+        </div>
 
-    <h1>{{ product.label }}</h1>
-    <p>{{ product.photo }}</p>
-    <p>{{ product.description }}</p>
-    <p>{{ product.price }}</p>
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Le panier basique </h1>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="img-salade">
+        <div class="row">
+            <div class="col-12">
+                <img src="img/assorted-variety-of-vegetables-on-basket-2255924(1).png" class="img-force-fluid " alt="panier basique de fruit et legumes de saison par les petits paniers">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="presentation">
+            <div class="row">
+                <div class="col-6" id="nbr-personne">
+                    <h3 class="quantite">1 à 2 personnes</h3>
+                </div>
+                <div class="col-6" id="indication-prix">
+                    <h3 class="prix">19.90<sup>€</sup><span>/mois</span></h3>
+                    <!-- <p class="euro">€</p>
+                    <p class="recurrence">/mois</p> -->
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p style="margin-bottom: 6rem;">
+                        Chaque semaine, nous préparons avec soin votre panier de fruits et légumes exclusivement issue d’une agriculture biologique et locale dans un rayon de 50km maximum autour de chez vous. Afin de réduire au maximum notre empreinte écologique, nous vous livrerons uniquement des produits de saisons.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="details">
+        <div class="row">
+            <div class="col-12">
+                <h2>Détails du panier</h2>
+            </div>
+        </div>
+        <div class="contenu-details">
+            <div class="container">
+                <div class="row" style="padding-top: 7px;">
+                    <div class="col-10">
+                        <h4>Tomates coeur de boeuf</h4>
+                        <p class="provenance">provenance Ferme de bel Ebba</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="kilo"> 2kg</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <h4>Tomates coeur de boeuf</h4>
+                        <p class="provenance">provenance Ferme de bel Ebba</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="kilo"> 2kg</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <h4>Tomates coeur de boeuf</h4>
+                        <p class="provenance">provenance Ferme de bel Ebba</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="kilo"> 2kg</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-10">
+                        <h4>Tomates coeur de boeuf</h4>
+                        <p class="provenance">provenance Ferme de bel Ebba</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="kilo"> 2kg</p>
+                    </div>
+                </div>
+                <div class="row" id="total-panier">
+                    <div class="col-10">
+                        <p class="total">Total</p>
+                    </div>
+                    <div class="col-2">
+                        <p class="total-kilo">8kg</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="test col-12 col-md-7 col-lg-6 col-xl-4 text-center mx-auto">
+                        <button class="btn btn-primary btn-block">Je m'abonne </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+
+    </div>
+
 {% endblock %}

@@ -1,10 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
-html {
-    scroll-behavior: smooth;
-}
-
 
 header {
     background-color: #F8F7F4;
@@ -26,6 +22,21 @@ h1{
     font-family: 'Abril Fatface', cursive;
     font-size: 35px;
     color: #211400;
+}
+h1{
+    margin-top: 30px;
+    margin-bottom: 53px;
+    position: relative;
+}
+h1::after{
+    content: "";
+    display: block;
+    width: 26px;
+    height: 6px;
+    background-color: #417B5A;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
 }
 
 h2{
@@ -66,7 +77,7 @@ footer{
     font-size: 15px;
     color: #696961;
     text-decoration: underline;
-    flex-shrink: 0;
+    
 }
 
 .btn-primary
@@ -127,16 +138,11 @@ footer{
     width:100%;
 }
 
-.section-full {
+#img-salade {
     max-height: 400px;
     overflow: hidden;
 }
 
-.section-full img {
-    width: 100%;
+#img-salade img {
     object-fit: cover;
-}
-
-#user-name{
-
 }

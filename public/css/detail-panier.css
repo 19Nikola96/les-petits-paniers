@@ -1,0 +1,145 @@
+html{
+    font-size: 100%;
+}
+.img-force-fluid {
+    width:100%;
+}
+
+#img-salade {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#img-salade img {
+    object-fit: cover;
+}
+h1{
+    margin-top: 30px;
+    margin-bottom: 53px;
+    position: relative;
+}
+h1::after{
+    content: "";
+    display: block;
+    width: 26px;
+    height: 6px;
+    background-color: #417B5A;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+}
+.btn-retour{
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #696961;
+}
+
+.contenu-details{
+    background-color: #F8F7F4;
+    height: 364px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.total{
+    color: #417B5A;
+    font-size: 1.5rem;
+    font-family: 'Abril Fatface', cursive;
+}
+.total-kilo{
+    font-size: 1.6rem;
+    color: #417B5A;
+    font-weight: bold;
+    text-align: end;
+    
+}
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #606060;
+    margin-bottom: 0px;
+}
+.details h2{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+.btn btn-primary btn-block{
+    position: absolute;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+}
+.kilo{
+    font-size: 1.4rem;
+    color: #606060;
+    font-weight: bold;
+    text-align: end;
+    padding-top: 23px;
+}
+.provenance{
+    margin-bottom: 0px;
+    color: #A8A8A8;
+}
+.provenance::after{
+    content: "";
+    display: block;
+    width: 80%;
+    height: 1px;
+    background-color: #696961;
+    opacity: 25%;
+    position: absolute;
+    bottom: 20px;
+
+}
+
+#detail-contenu::after{
+    content: "";
+    display: block;
+    width: 98%;
+    height: 1px;
+    background-color: #417B5A;
+    position: absolute;
+    bottom: 20px;
+
+}
+
+#total-panier{
+    margin-top: 10px;
+}
+.quantite{
+    color: #211400;
+    font-weight: bold;
+}
+
+.prix{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.prix sup {
+    font-size: 1.2rem;
+    top: -0.5rem;
+}
+.prix span{
+    font-size: 1.1rem;
+    margin-left: 0rem;
+}
+#indication-prix{
+    text-align: end;
+    margin-top: 13px;
+}
+#nbr-personne{
+    margin-top: 22px;
+}
+.presentation p::after{
+    content: "";
+    display: block;
+    width: 26px;
+    height: 6px;
+    background-color: #417B5A;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+}
+.btn.btn-primary.btn-block{
+    margin-top: 28px;
+}

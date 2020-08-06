@@ -120,5 +120,22 @@ class Products
      */
     private $price;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $nombrePersonnes;
+
+
+    public function getNombrePersonnes(): ?int
+    {
+        return $this->nombrePersonnes;
+    }
+
+    public function setNombrePersonnes(int $nombrePersonnes): self
+    {
+        $this->nombrePersonnes = $nombrePersonnes;
+
+        return $this;
+    }
 
 }
