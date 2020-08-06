@@ -29,6 +29,22 @@ class Products
     private $idorder;
 
     /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId(int $id): void
+    {
+        $this->id = $id;
+    }
+
+    /**
      * @var string|null
      *
      * @ORM\Column(name="label", type="string", length=255, nullable=true)

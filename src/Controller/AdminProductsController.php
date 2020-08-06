@@ -29,32 +29,30 @@ class AdminProductsController extends AbstractController
      */
     public function edit(Request $request,
                          EntityManagerInterface $entityManager,
-                         Products $productsRepository,
+                         ProductsRepository $productsRepository,
                          $id)
     {
         if (is_null($id)) {
-            $product = new product();
+            $product = new products();
         } else // modification
         {
             $product = $productsRepository->find($id);
         }
 
 
-        // Création du formulaire lié à l'entité Catégory //
+
         $form = $this->createForm(ProductType::class, $product);
 
         $form->handleRequest($request);
 
-        // si le form à été envoyé //
         if ($form->isSubmitted()) {
-            // si la validation des annotations @assert dans l'entité passe
+
             if ($form->isValid()) {
-                //enregistrement de la catégorie bdd //
+
                 $entityManager->persist($product);
                 $entityManager->flush();
 
-                // Redirection vers la liste //
-                return $this->redirectToRoute('app_adminproduct_index');
+                return $this->redirectToRoute('app_adminproducts_index');
             }
         }
 
@@ -76,7 +74,7 @@ class AdminProductsController extends AbstractController
         $entityManager->remove($products);
         $entityManager->flush();
 
-        return $this->redirectToRoute('app_adminproduct_index');
+        return $this->redirectToRoute('app_adminproducts_index');
     }
 
 }
