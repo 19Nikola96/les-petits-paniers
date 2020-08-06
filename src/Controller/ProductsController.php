@@ -32,7 +32,7 @@ class ProductsController extends AbstractController
     {
         $liste = $productsRepository ->findAll();
 
-        return $this->render('product/liste/html.twig', [
+        return $this->render('products/liste.html.twig', [
             'liste' => $liste]);
     }
 

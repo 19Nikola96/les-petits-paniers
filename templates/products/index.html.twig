@@ -12,7 +12,7 @@
 
         <div class="row">
             <div class="col-12">
-                <h1 class="text-center">Le panier basique </h1>
+                <h1 class="text-center">{{ product.label }}</h1>
             </div>
         </div>
     </div>
@@ -21,7 +21,7 @@
     <section id="img-salade">
         <div class="row">
             <div class="col-12">
-                <img src="img/assorted-variety-of-vegetables-on-basket-2255924(1).png" class="img-force-fluid " alt="panier basique de fruit et legumes de saison par les petits paniers">
+                <img src="{{ asset('img/assorted-variety-of-vegetables-on-basket-2255924.png') }}" class="img-force-fluid " alt="panier basique de fruit et legumes de saison par les petits paniers">
             </div>
         </div>
     </section>
@@ -30,10 +30,10 @@
         <section class="presentation">
             <div class="row">
                 <div class="col-6" id="nbr-personne">
-                    <h3 class="quantite">1 à 2 personnes</h3>
+                    <h3 class="quantite">{{ product.nombrePersonnes}} personnes</h3>
                 </div>
                 <div class="col-6" id="indication-prix">
-                    <h3 class="prix">19.90<sup>€</sup><span>/mois</span></h3>
+                    <h3 class="prix">{{ product.price }}<sup>€</sup><span>/mois</span></h3>
                     <!-- <p class="euro">€</p>
                     <p class="recurrence">/mois</p> -->
                 </div>

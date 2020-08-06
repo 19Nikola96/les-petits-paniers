@@ -4,9 +4,11 @@
 
 
 
-{% block body %}
+{% block liste %}
+
     <h1>Liste des paniers</h1>
-    {% for product in list %}
+
+    {% for product in liste %}
 
         <div class="list">
             <li><strong>{{ product.label }}</li></strong> <hr>
@@ -14,6 +16,7 @@
             <li>{{ product.description }}</li>
             <li>{{ product.price }}</li>
         </div>
+
     {% endfor %}
 
 
