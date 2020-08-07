@@ -18,6 +18,7 @@
             <link href="{{ asset('/css/general.css') }}" rel="stylesheet"/>
             <link href="{{ asset('/css/infosperso.css') }}" rel="stylesheet"/>
             <link href="{{ asset('/css/faq.css') }}" rel="stylesheet"/>
+            <link href="{{ asset('/css/contact.css') }}" rel="stylesheet"/>
 
         {% endblock %}
     </head>
@@ -31,7 +32,7 @@
                     <div class="dropdown-menu dropdown-menu-left">
                         <a class="dropdown-item" href="{{ path('app_index_index') }}"> Accueil</a>
                         <a class="dropdown-item" href="#"> Blog</a>
-                        <a class="dropdown-item" href="#"> Contact</a>
+                        <a class="dropdown-item" href="{{ path('contact') }}"> Contact</a>
                         <a class="dropdown-item" href="{{ path('faq') }}"> FAQ</a>
                     </div>
                 </div>

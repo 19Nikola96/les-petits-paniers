@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ContactController!{% endblock %}
+
+{% block body %}
+    <form action="text" class="container">
+        <div class="form-group row">
+            <label for="staticEmail" class="col-12 col-form-label">Nom</label>
+            <div class="col-12">
+                <input type="
+                      text" class="form-control" id="staticEmail" value="nom">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="staticEmail" class="col-12 col-form-label">Email</label>
+            <div class="col-12">
+                <input type="text" class="form-control" id="staticEmail" value="email@example.com">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="staticEmail" class="col-12 col-form-label">Message</label>
+            <div class="col-12">
+                <input type="text" class="form-control p-5" id="staticEmail" value="message">
+            </div>
+        </div>
+
+    </form>
+    </section>
+
+    <div class="row pt-5">
+
+        <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4 mb-5">
+            <button class="btn btn-primary btn-block">Envoyer</button>
+        </div>
+    </div>
+
+{% endblock %}
