@@ -1,0 +1,29 @@
+button:focus {outline:0;}
+input:focus {outline:0;}
+
+button:active{
+  transition: 0.1s;
+  border-radius: 25%;
+}
+
+.shad-i{
+  border: none;
+  border-radius: 25px;
+  box-shadow: 0 0 3px gray;
+  height: 2rem;
+}
+
+.shad-b{
+  background-color: white;
+  border: none;
+  height: 2rem;
+  margin-left: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 3px gray;
+}
+
+.fa-search{
+  color: #202f4d;
+  margin-left: 5px;
+}
+
