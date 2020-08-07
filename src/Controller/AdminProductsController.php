@@ -74,7 +74,7 @@ class AdminProductsController extends AbstractController
         $entityManager->remove($products);
         $entityManager->flush();
 
-        return $this->redirectToRoute('app_adminproducts_delete');
+        return $this->redirectToRoute('app_adminproducts_edit');
     }
 
 }
