@@ -2,6 +2,11 @@
      color: #417B5A;
     }
 .card{
-    border-color: none
-    ;
+    border-color: none;
+}
+.change{
+    outline: none;
+    border: 1px solid gray;
+    padding: 0.3rem;
+    border-radius: 10px;
 }

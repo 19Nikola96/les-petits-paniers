@@ -1,0 +1,90 @@
+
+
+#header-achat{
+    background-color: #ffffff;
+    background-clip: border-box;
+    border-radius: 4px;
+    box-shadow: 0px 3px 10px 5px rgba(0, 0, 0, .2);
+    background-position-y: top;
+}
+
+.titre-header{
+    color: #211400;
+    font-weight: bold;
+    margin-top: 4px;
+    
+}
+.prix{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #417B5A;
+}
+.prix sup {
+    font-size: 1.2rem;
+    top: -0.5rem;
+}
+.prix span{
+    font-size: 0.9rem;
+    margin-left: 0rem;
+    font-weight: lighter;
+    line-height: -10rem;
+}
+#indication-prix{
+    text-align: end;
+    margin-top: 13px;
+}
+#indication-prix h3::after{
+    content: "par mois";
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: #417B5A;
+    position: absolute;
+    right: 10%;
+    bottom: 0px;
+}
+
+.separator{
+    background-color: #417B5A;
+    width: 18px;
+    height: 6px;
+    position: absolute;
+    bottom: 21px;
+    left: 15px;
+    display: block;
+}
+
+.form-reception{
+    background-color: #F8F7F4;
+    height: 120px;
+    width: 100%;
+    height: 191px;
+}
+.form-check-label{
+    text-decoration: none;
+    
+}
+.form-check{
+    padding-top: 22px;
+}
+.form-check sup{
+    top: 0em;
+left: 0.2rem;
+font-weight: lighter;
+font-style: italic;
+font-size: 0.9rem;
+}
+
+
+.validation{
+    margin-top: 200px;
+}
+#inlineFormCustomSelect{
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+}
+.pop-in{
+    border: solid 1px #80808047;
+    border-radius: 25px;
+    background-color: white;
+}

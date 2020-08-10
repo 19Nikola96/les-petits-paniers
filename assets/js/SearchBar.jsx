@@ -2,6 +2,10 @@ import React from 'react';
 
 class SearchBar extends React.Component
 {
+    state = {
+        search : ''
+    }
+
     render(){
         return(
             <section className="mt-5 card-list container row justify-content-between mx-auto">

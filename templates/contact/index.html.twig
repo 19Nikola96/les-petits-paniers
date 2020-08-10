@@ -3,26 +3,32 @@
 {% block title %}Hello ContactController!{% endblock %}
 
 {% block body %}
+    <div class="row my-4">
+        <div class="col-12">
+            <h1 class="text-center">Nous contacter</h1>
+        </div>
+    </div>
+    </div>
     <form action="text" class="container">
         <div class="form-group row">
             <label for="staticEmail" class="col-12 col-form-label">Nom</label>
             <div class="col-12">
                 <input type="
-                      text" class="form-control" id="staticEmail" value="nom">
+                      text" class="form-control" id="staticEmail">
             </div>
         </div>
 
         <div class="form-group row">
             <label for="staticEmail" class="col-12 col-form-label">Email</label>
             <div class="col-12">
-                <input type="text" class="form-control" id="staticEmail" value="email@example.com">
+                <input type="text" class="form-control" id="staticEmail">
             </div>
         </div>
 
         <div class="form-group row">
             <label for="staticEmail" class="col-12 col-form-label">Message</label>
             <div class="col-12">
-                <input type="text" class="form-control p-5" id="staticEmail" value="message">
+                <textarea type="text" class="form-control" id="staticEmail"></textarea>
             </div>
         </div>
 

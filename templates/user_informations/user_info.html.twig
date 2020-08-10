@@ -22,22 +22,62 @@
             <div class="container">
                 <div class="row">
                     <div class="col-10 mt-4 "><h4><i class="fas fa-user mr-2"></i>{{ app.user.firstname }}  {{ app.user.lastname }}</h4></div>
-                    <div class="col-2 mt-4 text-right"><i class="fas fa-pen"></i></div>
+                    <button class="collapsed col-2 mt-4 text-right" type="button" data-toggle="collapse" data-target="#first-lastname" aria-expanded="false" aria-controls="first-lastname"><i class="fas fa-pen"></i></button>
+                    <div id="first-lastname" class="collapse">
+                        <form method="post">
+                            <div class="form-group row pt-4">
+                                <div class="col-12">
+                                    <input class="change" type="text" name="lastname" placeholder="Nom">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-12">
+                                    <input class="change" type="text" name="firstname" placeholder="Prénom">
+                                </div>
+                            </div>
+                            <div class="form-group row pt-4">
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Enregistrer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <hr>
                 <div class="row">
-                    <div class="col-10 my-3 "><h4><i class="fas fa-envelope mr-2"></i></i>{{ app.user.email }}</h4></div>
-                    <div class= "col-2 mt-3 text-right"><i class="fas fa-pen"></i></div>
+                    <div class="col-10 my-3"><h4><i class="fas fa-envelope mr-2"></i></i>{{ app.user.email }}</h4></div>
+                    <button class="collapsed col-2 mt-4 text-right" type="button" data-toggle="collapse" data-target="#email" aria-expanded="false" aria-controls="email"><i class="fas fa-pen"></i></button>
+                    <div id="email" class="collapse">
+                        <form method="post">
+                            <div class="form-group row pt-4">
+                                <div class="col-12">
+                                    <input class="change" type="text" name="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group row pt-4">
+                                <div class="col-12">
+                                    <button class="btn btn-primary" type="submit">Enregistrer</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-10 mt-3 "><h4><i class="fas fa-home mr-2"></i> 1 rue de la paix 75002 Paris</h4></div>
-                    <div class="col-2 mt-3 text-right"><i class="fas fa-pen"></i></div>
+                    <button class="collapsed col-2 mt-4 text-right" type="button" data-toggle="collapse" data-target="#address" aria-expanded="false" aria-controls="address"><i class="fas fa-pen"></i></button>
+                    <div id="address" class="collapse">
+                        <div class="form-group row pt-4">
+                            <div class="col-12">
+                                <input class="change" type="text" placeholder="Adresse">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col-10 mt-4 "><h4><i class="fas fa-phone-alt mr-2"></i> 06 75 98 65 32</h4></div>
-                    <div class="col-2 mt-4 text-right"><i class="fas fa-pen"></i></div>
+                    <button class="col-2 mt-4 text-right"><i class="fas fa-pen"></i></button>
                 </div>
                 <hr>
             </div>

@@ -15,6 +15,8 @@ class AdminProductsController extends AbstractController
 {
     /**
      * @Route("/admin/products", name="admin_products")
+     * @param ProductsRepository $productsRepository
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function index(ProductsRepository $productsRepository)
     {
