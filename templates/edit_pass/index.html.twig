@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello EditPassController!{% endblock %}
+{% block title %}Modifier mon mot de passe!{% endblock %}
 
 {% block body %}
     <section >
@@ -13,6 +13,7 @@
                     <h1 class="text-center">Changer de mot de passe </h1>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-12 col-sm-8 offset-sm-2 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
                     <h2>Modifier</h2>
@@ -35,19 +36,19 @@
 
 
                         <div class="form-group row">
-                            <label for="inputPassword" class="col-12 col-form-label">Mot de passe actuel</label>
+                            <label for="oldPass" class="col-12 col-form-label">Mot de passe actuel</label>
                             <div class="col-12">
                                 <input type="password" class="form-control" name = "oldPass" id="oldPass" required>
 
 
 
                                 <div class="form-group row">
-                                    <label for="inputPassword" class="col-12 col-form-label"> Nouveau mot de passe</label>
+                                    <label for="newPass" class="col-12 col-form-label"> Nouveau mot de passe</label>
                                     <div class="col-12">
                                         <input type="password" class="form-control" name = "newPass" id="newPass"  required>
 
                                         <div class="form-group row">
-                                            <label for="inputPassword" class="col-12 col-form-label"> Confirmer mot de passe</label>
+                                            <label for="newPass2" class="col-12 col-form-label"> Confirmer mot de passe</label>
                                             <div class="col-12">
                                                 <input type="password" class="form-control" name = "newPass2" id="newPass2"  required>
 
@@ -55,7 +56,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12 p-5">
-                                                <button class="btn btn-primary" type="submit" >Enregistrer</button>
+                                                <button href="{{ path('app_adminproducts_edit') }}" class="btn btn-primary" type="submit" >Enregistrer</button>
                                                 <!--a class="btn btn-primary" href="{# path('app_adminproducts_edit', {'id' : product.id}) #}">Modifier</a-->
                                             </div>
                                         </div>

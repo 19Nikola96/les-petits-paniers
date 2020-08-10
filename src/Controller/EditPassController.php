@@ -32,11 +32,10 @@ class EditPassController extends AbstractController
                 $em->flush();
 
 
+
+                return $this->redirectToRoute('');
             }
-            else
-            {
-                $this->addFlash('Un des deux champs n\est pas valide');
-            }
+
         }
 
 
