@@ -26,7 +26,9 @@
 
             <div class="row">
                 <div class="col-1">
-                    <img style="margin-top: 26px;" src="{{ asset('img/Backward-arrow.png') }}" alt="flèche de retour">
+                    <a href="{{ path('app_index_index') }}">
+                        <img style="margin-top: 26px;" src="{{ asset('img/Backward-arrow.png') }}" alt="flèche de retour">
+                    </a>
                 </div>
                 <div class="col-11">
                     <h3 style="text-align: center;margin-bottom: 2rem;margin-top: 30px;" class="titre-header">LIVRAISON</h3>
@@ -48,20 +50,20 @@
         </div>
     </section>
 
-    <section id="choix-reception">
-        <div class="container">
-            <div class="row">
-                <div class="col-12" style="margin-top: 30px;margin-bottom: 30px;">
-                    <img class="img-fluid col-8 offset-2" src="{{ asset('img/barre-prog1@2x.png') }}" alt="barre de progression du processus d'achat">
+        <section id="choix-reception">
+            <div class="container">
+                <div id="barre-prog" class="row">
+                    <div class="progression active"></div>
+                    <div class="progression"></div>
+                    <div class="progression"></div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Le panier basique</h2>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <h2>Le panier basique</h2>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
     <form>
         <div class="form-reception">
@@ -228,7 +230,7 @@
                 <div class="container">
                     <div id="bouton" class="row">
                         <div class="col-12 col-md-7 col-lg-6 col-xl-4 text-center mx-auto">
-                            <button class="btn btn-primary btn-block">Suivant </button>
+                            <a role="button" class="btn btn-primary btn-block" href="{{ path('app_paymentpath_index2') }}">Suivant</a>
                         </div>
                     </div>
                 </div>

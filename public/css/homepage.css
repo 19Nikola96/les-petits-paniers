@@ -13,8 +13,9 @@
 }
 
 #titre{
-    background-image: url(../img/landing\ page\ background.png);
+    background-image: url(../../img/panier-classique.png);
     background-size: cover;
+    background-position: center;
     max-width: 100%;
     background-color: black;
     height:386px ;}

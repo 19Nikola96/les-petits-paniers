@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
+header {
+    background-color: #F8F7F4;
+}
+#header-menu{
+    height: 70px;
+}
+
+.fa{
+    color: #417B5A;
+    font-size: 25px;
+}
+
+.logo{
+    text-align: center;
+}
+
+h1{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 35px;
+    color: #211400;
+}
+h1{
+    margin-top: 30px;
+    margin-bottom: 53px;
+    position: relative;
+}
+h1::after{
+    content: "";
+    display: block;
+    width: 26px;
+    height: 6px;
+    background-color: #417B5A;
+    position: absolute;
+    left: 50%;
+    bottom: -25px;
+}
+
+h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
+    color: #211400
+}
+
+h3{
+    font-family: "Helvetica";
+    font-size:16px;
+    font-style: bold;
+    color: #696961;
+}
+
+h4{
+    font-family: "Helvetica";
+    font-size: 17px;
+    font-style: bold;
+}
+
+p{
+    font-family:"Helvetica";
+    font-size: 14px;
+    color: #696961;
+}
+
+#infos{
+    background-color:#F8F7F4;
+    height: 200px;
+   
+}
+
+footer{
+    padding-top:66px;
+    text-align: center;
+    font-style: "Helvetica";
+    font-size: 15px;
+    color: #696961;
+    text-decoration: underline;
+    
+}
+
+.btn-primary
+{
+    background-color: #417B5A;
+    border-color: #417B5A;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover
+{
+    background-color: rgb(57, 111, 80);
+    border-color:rgb(57, 111, 80);
+}
+
+.btn-secondary
+{
+    background-color: white;
+    color: #417B5A ;
+    border-color:  #417B5A;
+    box-shadow:  #417B5A;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+
+}
+.btn-secondary:hover{
+    background-color:#417B5A;
+    color: white ;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;}
+
+.form-control, .form-group{
+        border-color:#E7E4D8;
+
+    }
+
+.col-form-label{
+    font-family:"Helvetica";
+    font-size: 14px;
+    color: #696961;
+}
+
+.form-check{
+    color: #696961;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-check-label{
+    text-decoration: underline;
+
+}
+
+#avis,#statut{background-color:  #F8F7F4;}
+
+.img-force-fluid {
+    width:100%;
+}
+
+#img-salade {
+    max-height: 400px;
+    overflow: hidden;
+}
+
+#img-salade img {
+    object-fit: cover;
+}

@@ -4,12 +4,6 @@
 
 {% block body %}
     <div class="container">
-        <div class="row">
-            <div class="col-1">
-                <a href="#" class="btn-retour"></a>
-            </div>
-        </div>
-
         <div class="row my-4">
             <div class="col-12">
                 <h1 class="text-center">{{ product.label }}</h1>
@@ -104,7 +98,7 @@
 
                 <div class="row">
                     <div class="test col-12 col-md-7 col-lg-6 col-xl-4 text-center mx-auto">
-                        <a role="button" class="btn btn-primary btn-block" href="{{path('payment_path')}}">Je m'abonne</a>
+                        <a role="button" class="btn btn-primary btn-block" href="{{path('app_paymentpath_index')}}">Je m'abonne</a>
                     </div>
                 </div>
             </div>

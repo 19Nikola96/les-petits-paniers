@@ -1,4 +1,6 @@
 
+    @import '~pretty-checkbox/src/pretty-checkbox.scss';
+
 
 #header-achat{
     background-color: #ffffff;
@@ -53,11 +55,12 @@
     display: block;
 }
 
-.form-reception{
+#infos-livraison{
     background-color: #F8F7F4;
     height: 120px;
     width: 100%;
-    height: 191px;
+    height: 520px;
+
 }
 .form-check-label{
     text-decoration: none;
@@ -76,17 +79,47 @@ font-size: 0.9rem;
 
 
 .validation{
-    margin-top: 200px;
+    margin-top: 450px;
+    align-items:flex-end;
 }
 #inlineFormCustomSelect{
     width: 100%;
     margin-top: 25px;
     display: flex;
 }
-.pop-in{
-    border: solid 1px #80808047;
-    border-radius: 25px;
-    background-color: white;
+
+label[for="lastname"]{
+    margin-bottom: 4px;
+
+}
+label[for="firstname"]{
+    margin-bottom: 4px;
+}
+label[for="inputAddress"]{
+    margin-bottom: 4px;
+}
+
+label[for="inputAddress2"]{
+    margin-bottom: 4px;
+}
+label[for="inputCity"]{
+    margin-bottom: 4px;
+}
+label[for="inputCitycode"]{
+    margin-bottom: 4px;
+}
+
+.form-group{
+    margin-bottom: 10px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #696961;
+}
+.form-check-label{
+    font-weight: initial;
 }
 #barre-prog .progression {
     position:relative;
